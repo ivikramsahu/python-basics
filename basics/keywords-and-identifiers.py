@@ -38,6 +38,73 @@ print ("None == False ↠ ", None == False)
 print ("None == [] ↠ ", None == [])
 print ("Comparing x, y value as None (ie. x == y)  ↠ ", x == y)
 
+'''
+Void functions return None values
+or functions which do not have a return statement
+'''
+def mineVoidFunction():
+    x = 1
+    y = 3
+    z = x + y
+    
+print("A function mineVoidFunction with no return statement :: ",mineVoidFunction())
+    
+# Function with improper return
 
+def improperReturn(a):
+    if (a % 2) == 0:
+        return True
 
+print("A function with improper output :: ", improperReturn(5))
+
+# And, OR (you can similarly follow all rules for True False)
+
+print("True and False :: ", True and False)
+print("True or False :: ", True or False)
+
+''' as, assert, async, await, break and continue
+as     ↠  alias for packages
+assert ↠  debugging purposes
+async and await  ↠  concurrent code
+break  ↠  
+continue ↠
+'''
+
+import math as vikram
+
+print("Factorial of number using alias :: ", vikram.factorial(4))
+
+'''
+fact = 20
+message = "ALert"
+
+if not (fact > vikram.factorial(5)):
+    raise AssertionError(message)
+'''
+
+import asyncio
+
+async def main():
+    print("Hello")
+    await asyncio.sleep(2)
+    print ("World")
+
+#asyncio.run(main())
+
+for i in range(1,11):
+    if i == 5:
+        print("Hello man")
+        continue # break
+    else :
+        print(i)
+        
+''' 
+There are many more keywords that can be seen furthur with advance python and OOPs concept.
+
+About Identifiers:
+1. Identifier is name given to class, function, variables etc which helps to differentiate with others.
+2. Can be combination of lowercase, uppercase and digits ie. hello_1_my_Variable
+3. An identifier cannot start with digit.
+4. keywords cannot be used as identifiers.
+'''
 
