@@ -28,3 +28,12 @@ print (colors)
 name = 1; surname = 2; value = 3
 
 print(name , " + " , surname , " " + ":" , value)
+
+# Docstrings : comment/string literal right after def/function
+
+def sumOfTwo(p,q):
+    """calculate sum of two"""
+    return p+q
+
+print(sumOfTwo(76,12))
+    
