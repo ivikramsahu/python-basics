@@ -1,39 +1,42 @@
-# Multiline statements 
+# Multiline statements
 
 a = 1 + 2 + \
     3 + 5 + \
-    8 + 7 
+    8 + 7
 
-print (a)
-            
-# OR 
+print(a)
 
-b = ( 1 + 2 +
+# OR
+
+b = (1 + 2 +
      3 + 6 +
      8 + 9
-    )
+     )
 
-print (b)
+print(b)
 
-# OR 
+# OR
 
 colors = ['red',
           'blue',
           'green']
 
-print (colors)
+print(colors)
 
 # OR
 
-name = 1; surname = 2; value = 3
+name = 1
+surname = 2
+value = 3
 
-print(name , " + " , surname , " " + ":" , value)
+print(name, " + ", surname, " " + ":", value)
 
 # Docstrings : comment/string literal right after def/function
 
-def sumOfTwo(p,q):
+
+def sumOfTwo(p, q):
     """calculate sum of two"""
     return p+q
 
-print(sumOfTwo(76,12))
-    
+
+print(sumOfTwo(76, 12))

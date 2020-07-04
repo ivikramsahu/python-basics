@@ -4,6 +4,8 @@
  3. There are 33 keywords (can slightly vary) in which expect (True, False and None) all are in lowercase.
 '''
 
+import asyncio
+import math as vikram
 import keyword
 
 print("\nList of keywords ↠ ",  keyword.kwlist)
@@ -18,10 +20,10 @@ print("\nList of keywords ↠ ",  keyword.kwlist)
  True, False and None
 '''
 
-print ("\n Boolean Operations True / False (1 or 0)")
-print ("Output for 1 == 1 is ↠ " , 1 == 1)
-print ("Output for 2 < 1 is ↠ " , 2 < 1)
-print ("Output for 1 >= 3 is ↠ " , 1 >= 3)
+print("\n Boolean Operations True / False (1 or 0)")
+print("Output for 1 == 1 is ↠ ", 1 == 1)
+print("Output for 2 < 1 is ↠ ", 2 < 1)
+print("Output for 1 >= 3 is ↠ ", 1 >= 3)
 
 ''' About None datatype :
  It is a special constant that represent absence of value or null value.
@@ -32,28 +34,33 @@ print ("Output for 1 >= 3 is ↠ " , 1 >= 3)
 '''
 x = None
 y = None
-print ("\nConcepts for None keyword:")
-print ("None == 0 ↠ ", None == 0)
-print ("None == False ↠ ", None == False)
-print ("None == [] ↠ ", None == [])
-print ("Comparing x, y value as None (ie. x == y)  ↠ ", x == y)
+print("\nConcepts for None keyword:")
+print("None == 0 ↠ ", None == 0)
+print("None == False ↠ ", None == False)
+print("None == [] ↠ ", None == [])
+print("Comparing x, y value as None (ie. x == y)  ↠ ", x == y)
 
 '''
 Void functions return None values
 or functions which do not have a return statement
 '''
+
+
 def mineVoidFunction():
     x = 1
     y = 3
     z = x + y
-    
-print("A function mineVoidFunction with no return statement :: ",mineVoidFunction())
-    
+
+
+print("A function mineVoidFunction with no return statement :: ", mineVoidFunction())
+
 # Function with improper return
+
 
 def improperReturn(a):
     if (a % 2) == 0:
         return True
+
 
 print("A function with improper output :: ", improperReturn(5))
 
@@ -70,7 +77,6 @@ break  ↠
 continue ↠
 '''
 
-import math as vikram
 
 print("Factorial of number using alias :: ", vikram.factorial(4))
 
@@ -82,22 +88,21 @@ if not (fact > vikram.factorial(5)):
     raise AssertionError(message)
 '''
 
-import asyncio
 
 async def main():
     print("Hello")
     await asyncio.sleep(2)
-    print ("World")
+    print("World")
 
-#asyncio.run(main())
+# asyncio.run(main())
 
-for i in range(1,11):
+for i in range(1, 11):
     if i == 5:
         print("Hello man")
-        continue # break
-    else :
+        continue  # break
+    else:
         print(i)
-        
+
 ''' 
 There are many more keywords that can be seen furthur with advance python and OOPs concept.
 
@@ -107,4 +112,3 @@ About Identifiers:
 3. An identifier cannot start with digit.
 4. keywords cannot be used as identifiers.
 '''
-
