@@ -14,3 +14,15 @@ def greet(name, msg="Good morning!"):
 
 greet("Vikram")
 greet("Vikram", "How do you do?")
+
+
+# Python Arbitrary Arguments
+
+def welcome(*name):
+    for val in name:
+        print("Hello {}".format(val))
+        # or
+        print("Hola", name)
+
+
+welcome("vikram", "pratap", "sahu")
